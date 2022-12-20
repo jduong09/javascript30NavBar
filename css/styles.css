@@ -1,0 +1,80 @@
+body {
+  background-color: hsl(16, 100%, 93%);
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.hide {
+  display: none !important;
+}
+
+#img-hamburger, #img-close {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  font-size: 12px;
+}
+
+#img-logo {
+  width: 109px;
+  height: 32px;
+}
+
+#img-hamburger, #img-close, .img-list-item-nav {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+nav {
+  width: calc(100% - 2rem);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 4;
+  background-color: white;
+  border-radius: 10px;
+  color: hsl(212, 17%, 60%);
+}
+
+nav > div {
+  padding: 1.5rem;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.menu-header > h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.list-item-menu {
+  margin-bottom: .75rem;
+}
+
+.list-item-menu:last-of-type {
+  margin-bottom: 0;
+}
+
+.div-nav {
+  display: flex;
+}
+
+.img-list-item-nav {
+  margin-right: .5rem;
+}
+
+.div-list-item-description > h3 {
+  font-weight: 700;
+}
