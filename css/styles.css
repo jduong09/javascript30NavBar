@@ -196,7 +196,7 @@ h2 > span {
 
 @media (min-width: 992px) {
   header {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   #div-menu-nav {
@@ -272,7 +272,29 @@ h2 > span {
 }
 
 @media (min-width: 1200px) {
+  #div-products-nav {
+    width: 375px;
+  }
 
+  header, .div-landing-wrapper {
+    padding: 2rem 4rem;
+  }
+
+  .div-landing-wrapper {
+    align-items: center;
+  }
+
+  .div-landing > h2 {
+    font-size: 3rem;
+  }
+
+  .div-landing > h2, .div-landing > div:first-of-type {
+    width: 70%;
+  }
+
+  .list-trusted-companies {
+    width: 80%;
+  }
 }
 
 @media (min-width: 1400px) {
