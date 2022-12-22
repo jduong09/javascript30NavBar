@@ -1,6 +1,6 @@
 body {
   color: hsl(0, 0%, 42%);
-  background-color: hsl(16, 100%, 93%);
+  background-color: hsl(16, 51%, 94%);
   font-family: sans-serif;
   font-size: 14px;
 }
@@ -19,7 +19,7 @@ header {
   align-items: center;
   padding: 1rem;
   position: relative;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #img-logo {
@@ -45,7 +45,7 @@ nav {
 }
 
 nav > div {
-  padding: 1.5rem;
+  padding: 2.5rem;
 }
 
 .menu-header {
@@ -61,7 +61,7 @@ nav > div {
 }
 
 .list-item-menu {
-  margin-bottom: .75rem;
+  margin-bottom: 1.5rem;
 }
 
 .list-item-menu:last-of-type {
@@ -78,6 +78,7 @@ nav > div {
 
 .div-list-item-description > h3 {
   font-weight: 700;
+  color: hsl(212, 11%, 19%);
 }
 
 /* Main */
@@ -91,14 +92,14 @@ nav > div {
   width: 90%;
 }
 
-h2 {
+.div-landing > h2 {
   font-weight: 700;
   font-size: 2.25rem;
   color: hsl(0, 0%, 0%);
 }
 
 h2 > span {
-  color: orange;
+  color: hsl(39, 100%, 63%);
 }
 
 .div-landing > div:first-of-type {
