@@ -9,7 +9,11 @@ body {
   display: none !important;
 }
 
-#img-hamburger, #img-close, #btn-cta {
+.transparent {
+  visibility: hidden;
+}
+
+#img-hamburger, #img-close, .list-nav > li, #btn-login, .btn-cta {
   cursor: pointer;
 }
 
@@ -33,7 +37,7 @@ header {
   height: 24px;
 }
 
-nav {
+#div-products-nav {
   width: calc(100% - 2rem);
   position: absolute;
   top: 1rem;
@@ -83,8 +87,11 @@ nav > div {
 
 /* Main */
 /* .div-landing */
-.div-landing {
+.div-landing-wrapper {
   padding: 1rem;
+}
+
+.div-landing {
   font-size: 1rem;
 }
 
@@ -106,7 +113,7 @@ h2 > span {
   margin: 1rem 0;
 }
 
-#btn-cta {
+.btn-cta {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   padding: 1rem 1.5rem;
@@ -155,4 +162,119 @@ h2 > span {
 .img-trusted-company {
   width: auto;
   height: 50px;
+}
+
+@media (min-width: 576px) {
+  header, .div-landing-wrapper, .div-trusted-companies {
+    padding: 1rem 2rem;
+  }
+
+  .div-nav {
+    width: calc(100% - 4rem);
+    left: 2rem;
+  }
+
+  .div-landing > h2, .div-landing > div:first-of-type {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .div-landing > h2, .div-landing > div:first-of-type {
+    width: 50%;
+  }
+
+  .div-list-item-description > div {
+    width: 80%;
+  }
+
+  .list-trusted-companies {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    margin-bottom: 4rem;
+  }
+
+  #div-menu-nav {
+    width: 70%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-nav > li {
+    margin-right: 2rem;
+  }
+
+  #list-item-products {
+    position: relative;
+  }
+
+  #div-products-nav {
+    padding: 1.5rem;
+    width: 400px;
+    left: -50px;
+    top: 2rem;
+  }
+
+  #div-products-nav::after {
+    content: "";
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    top: -5px;
+    left: 71px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid hsl(0, 0%, 100%);
+  }
+
+  .div-nav, .div-list-item-description > div {
+    width: 100%;
+  }
+
+  .list-nav, #list-cta {
+    display: flex;
+    align-items: center;
+  }
+
+  #list-cta > li:first-of-type {
+    margin-right: 1rem;
+  }
+
+  #list-cta .btn-cta {
+    margin-bottom: 0;
+  }
+
+  .div-landing-wrapper {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+
+  .div-landing-img {
+    width: 35%;
+  }
+
+  #img-hero {
+    display: block;
+  }
+
+  .list-trusted-companies {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
 }
