@@ -137,6 +137,7 @@ h2 > span {
   margin-right: 1rem;
 }
 
+/* div-trusted-companies */
 .div-trusted-companies {
   padding: 1rem;
   margin-top: 4rem;
@@ -298,5 +299,23 @@ h2 > span {
 }
 
 @media (min-width: 1400px) {
+  header, .div-landing-wrapper {
+    padding: 2rem 8rem;
+  }
 
+  .div-landing > h2, .div-landing > div:first-of-type {
+    width: 75%;
+  }
+
+  .div-landing > h2 {
+    font-size: 3.75rem;
+  }
+
+  .div-landing-img {
+    width: 40%;
+  }
+
+  .list-trusted-companies {
+    width: 70%;
+  }
 }
